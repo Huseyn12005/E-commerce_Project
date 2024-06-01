@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="product.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button id="menuBtn" class="manu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <div class="labell">
+                <a class="category" href="">WOMEN</a>
+                <a class="category" href="">MEN</a>
+                <a class="category" href="">KIDS</a>
+            </div>
+            <div class="imgdiv">
+                <img class="w-[25px] h-[25px]" src="./Assets/dollar.svg" alt="">
+                <button id="cartbtn" class="w-[25px] h-[25px]">
+                    <img src="./Assets/cart.svg" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="product">
+        <div id="productImages" class="pimg">
+        </div>
+
+        <img class="image" id="selectedImage">
+        </img>
+
+        <div class="details">
+            <h2 class="h2" id="title"></h2>
+            <h3 class="mb-[43px]" id="description"></h3>
+            <div class="flex justify-items-center flex-col ">
+                <div class="flex flex-col">
+                    <label class="mb-[8px]" for="">SIZE:</label>
+                    <div id="sizes" class="size">
+                    </div>
+                    <label class="mb-[8px]" for="">COLOR:</label>
+                    <div id="colors" class="color">
+                    </div>
+                    <label for="">PRICE:</label>
+                    <div class="cost" id="price"></div>
+                </div>
+
+                <button class="addtocart">ADD TO CART</button>
+                <div id="detail" class="flex justify-items-center px-[30px]">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="labell">
+                <a class="category" href="">WOMEN</a>
+                <a class="category" href="">MEN</a>
+                <a class="category" href="">KIDS</a>
+            </div>
+            <div class="imgdiv">
+                <img class="w-[25px] h-[25px]" src="./Assets/dollar.svg" alt="">
+                <button id="cartbtn" class="w-[25px] h-[25px]">
+                    <img src="./Assets/cart.svg" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2 id="categoryName" class="category"></h2>
+        <div id="product-card-container" class="carddiv">
+        </div>
+         
+    </main>
+</body>
+</html>
