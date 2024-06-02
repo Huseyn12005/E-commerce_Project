@@ -158,6 +158,10 @@ $(document).ready(function() {
 
 });
 
+const imagesDiv=document.getElementById("productImages");
+const colorsDiv=document.getElementById("colors");
+const sizesDiv=document.getElementById("sizes");
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const selectedProduct = JSON.parse(localStorage.getItem('selectedProduct'));
@@ -173,10 +177,6 @@ document.addEventListener("DOMContentLoaded", () => {
         title.innerText=selectedProduct.title;
         description.innerText=selectedProduct.description;
         price.innerText=selectedProduct.price+"$";
-
-        const imagesDiv=document.getElementById("productImages");
-        const colorsDiv=document.getElementById("colors");
-        const sizesDiv=document.getElementById("sizes");
         setProductImages(imagesDiv,selectedProduct);
         setColors(colorsDiv,selectedProduct);
         setSizes(sizesDiv,selectedProduct);

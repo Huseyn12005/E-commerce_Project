@@ -140,6 +140,7 @@ $(document).ready(function() {
 
 const btn = document.getElementById("login");
 
+
 async function checkLogin(postData) {
     try {
         const response = await fetch("http://localhost:5000/api/auth/login", {
@@ -155,11 +156,10 @@ async function checkLogin(postData) {
         if (response.ok) {
             window.location.href = "main.html";
         } else {
-            alert("Login failed. Please check your credentials and try again.");
+            alert("Login failed");
         }
     } catch (error) {
-        console.error("Error:", error);
-        alert("Error occurred while logging in.");
+        alert("Error");
     }
 }
 

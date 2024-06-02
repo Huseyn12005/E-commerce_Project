@@ -133,10 +133,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 createProductCard(container, product);
             });
         } else {
-            throw new Error('Unexpected products data format');
+            throw new Error('Error');
         }
     } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error:', error);
         const container = document.getElementById('product-card-container');
         if (container) {
             container.innerHTML = '<p class="text-red-500">Failed to load products.</p>';

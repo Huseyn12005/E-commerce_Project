@@ -162,6 +162,10 @@ $(document).ready(function() {
 
 
 const btn = document.getElementById("register");
+const names = document.getElementById("names").value;
+const surname = document.getElementById("surname").value;
+const email = document.getElementById("email").value;
+const password = document.getElementById("password").value;
 
 async function createPost(postData) {
     try {
@@ -183,9 +187,5 @@ async function createPost(postData) {
 }
 
 btn.addEventListener("click", () => {
-    const names = document.getElementById("names").value;
-    const surname = document.getElementById("surname").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
     createPost({ name: names, surname: surname, email: email, password: password });
 });
